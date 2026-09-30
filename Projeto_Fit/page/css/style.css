@@ -345,19 +345,102 @@ body {
   transform: scale(1.08);
 }
 
-.modalidades-conteudo img{
-  align-content: center;
+.titulo-modalidades {
+  align-self: flex-start;
+  top: -40px;
+  text-align: center;
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: var(--branco);
+}
+
+
+.card-modalidades {
+  border-spacing: 0;
+  margin-top: -40px;
+  padding: 80px 24px;
+  text-shadow: var(--sombra-texto);
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-musculacao, .card-pilates, .card-spinning, .card-volei {
+  margin: 30px;
+  width: 15%;
+  height: 18%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  gap: 10px;
+  flex-flow: row wrap;
+  background: #FF7A00;
+  border-radius: 8%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+.card-modalidades img {
+  gap: 20px;
+  display: block;
+  justify-content: center;
+  width: 120%;
+  height: 160px;
   object-fit: cover;
 }
 
-figure{
-  margin-left: 20px;
-  align-items: center;
-  align-content: center;
+.titulo-tabela {
   text-align: center;
-
-  display: inline-block;
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: var(--branco);
 }
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 26%;
+  color: #fdfcfc;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+table.planos {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #fbfbfb;
+}
+
+table.planos th,
+table.planos td {
+  padding: 5px;
+  border-bottom: 1px solid #fcfbfb;
+  border-right: 1px solid #f6f6f6;
+  text-align: center;
+  width: 10%;
+}
+
+.valor-planos {
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #FF5500;
+}
+
